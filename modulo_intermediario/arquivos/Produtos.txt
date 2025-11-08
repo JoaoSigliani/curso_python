@@ -1,0 +1,3 @@
+nome: Maçã, preço: 2.5
+nome: Laranja, preço: 3.16
+nome: Banana, preço: 3.0
