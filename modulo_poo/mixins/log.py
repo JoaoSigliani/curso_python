@@ -1,10 +1,11 @@
+from abc import ABC, abstractmethod
 from pathlib import Path
 
 LOG_FILE = Path(__file__).parent / "log.txt"
 
-class Log():
-    def _log(self, msg):
-        raise NotImplementedError("Método não implementado")
+class Log(ABC):
+    @abstractmethod
+    def _log(self, msg): ...
     
     def log_error(self, msg):
         return self._log(f'Erro: {msg}')
